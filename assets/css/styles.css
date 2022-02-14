@@ -3,18 +3,35 @@
   padding: 0;
   margin: 0;
 }
+
+/*html {
+  scroll-behavior: smooth;
+}*/
+
 body {
   font-family: "Roboto Mono", monospace;
   font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #555;
 }
 nav {
   padding: 0 15px;
 }
 nav a {
   color: white;
+  transition: all 1s;
+  text-decoration: none;
 }
+
+section {
+  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
 a {
   color: white;
+  /*transition: all 3s;*/
   text-decoration: none;
 }
 
@@ -26,6 +43,20 @@ dl {
   text-decoration: none;
 }
 
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  font-family: Roboto Mono, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #999;
+  margin-bottom: 40px;
+}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -122,9 +153,6 @@ i {
   margin-right: 18px;
 }
 
-section {
-  margin-top: 100px;
-}
 .section-title {
   margin-bottom: 40px;
   font-size: 36px;
@@ -146,21 +174,75 @@ section {
   height: 50px;
   border-radius: 25px;
   font-size: 14px;
-  line-height: 20px;
-  padding: 15px;
+  padding: 10px;
   width: 20%;
   text-align: center;
   display: inline-block;
-  color: #fff !important;
+  color: #fff;
   font-weight: 600;
   overflow: hidden;
 }
 
-.icon-download img {
-  height: 10%;
-  width: 10%;
-  margin-top: -5px;
+.boton-cv img {
+  height: 14px;
   margin-right: 5px;
-  vertical-align: middle;
-  border-style: none;
+  margin-bottom: -1px;
+}
+
+.school-jobsite-url {
+  text-transform: uppercase;
+  color: #6d56c1;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Roboto Mono, monospace;
+  font-weight: 700;
+  padding-bottom: 5px;
+}
+
+.school-jobsite-years {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  color: #999;
+  padding-bottom: 10px;
+}
+
+.formation-experience-skills {
+  margin-top: 50px;
+  margin-bottom: 35px;
+}
+
+.curriculum-content {
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+
+.curriculum-content-block {
+  margin-bottom: 25px;
+}
+.general-skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-block {
+  display: flex;
+  flex-direction: column;
+}
+.skills-block-tech {
+  display: flex;
+  column-gap: 12px;
+}
+.skills {
+  font-family: Inconsolata, monospace;
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 12px;
+}
+.all-skills {
+  display: flex;
+  column-gap: 60px;
+  margin-left: 30px;
 }
